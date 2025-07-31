@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top">
+        <span>City Based Weather App</span>
+        <button>more</button>
+    </div>
+    <div class="documentation">
+        <div class="left">
+            <div class="ov">
+                <a href="#overview">1. App overview</a><br>
+                <li href="" class="small">My Weather App</li>
+            </div>
+
+
+            <a href="#feature">2. Feature</a>
+            <a href="#technology">3.Technologies used</a>
+            <a href="#setup">4. Setup Steps</a>
+            <a href="#footer">Contact </a>
+
+        </div>
+        <div class="doc">
+
+            <div class="overview" id="overview">
+                <div class="text-container1">
+                    <h1>App overview</h1>
+                    <p style="font-weight: bold; font-size: 28px; color: rgb(12, 101, 244);">A simple weather app that
+                        fetches and displays
+                        current weather data based on city search.
+                    </p>
+                    <br>
+                    <p class="colapsed1" id="paragraph1"> This weather application serves as a demonstration of my core
+                        programming competencies in
+                        front-end development, showcasing my proficiency in HTML, CSS, and JavaScript. Beyond
+                        foundational web technologies, the project highlights my ability to work with external APIs –
+                        specifically how to fetch, process, and dynamically display real-time data.
+                        Key technical aspects demonstrated:
+                        - Modern Front-End Development: Clean, responsive UI built with semantic HTML and CSS
+                        Flexbox/Grid
+                        - Asynchronous JavaScript: Implementation of fetch() or axios for API calls with proper error
+                        handling
+                        - Data Integration: Transformation of JSON API responses into user-friendly visualizations
+                        - State Management: Handling loading states, errors, and data updates
+                        - User Experience: Intuitive design with location detection and search functionality
+                        The app connects to [WeatherAPI/OpenWeatherMap], retrieving and presenting metrics like
+                        temperature, humidity, and forecasts while maintaining optimal performance. This project
+                        reflects my understanding of full client-side implementation – from UI design to data layer
+                        integration."</p>
+
+
+
+
+                    <button class="togle1" id="btn1" onclick="togleText1()">Read More</button>
+                </div>
+
+                <hr>
+            </div>
+            <hr>
+            <div class="feature" id="feature">
+                <div class="text-container">
+                    <h1>Feature</h1>
+                    <p style="font-weight: bold; font-size: 28px;color: rgb(12, 101, 244);">Search weather by city name.
+                        <br>
+                        Display: Temperature, Conditions(sunny, rainy,
+                        cloudy...) Humidity and Wind speed.</p><br>
+                    <p class="colapsed" id="paragraph">The application features city-based weather search functionality,
+                        delivering real-time atmospheric data through a clean, intuitive interface.
+                        Upon entering a location, the system displays comprehensive weather metrics including; <br>
+                        - <b>Temperature</b>: Measured in degrees Celsius (°C) with precision to one decimal place. <br>
+                        - <b>Humidity</b>: Expressed as a percentage (%) for immediate clarity <br>
+                        - <b>Weather Conditions</b>: Visually represented through icons and descriptors (sunny, rainy,
+                        cloudy,
+                        etc.) <br>
+                        - <b>Wind Speed</b>: Reported in kilometers per hour (km/h) for regional accuracy.
+                        <br>
+                        The interface dynamically updates to reflect current conditions, presenting data in a
+                        user-friendly card layout with appropriate visual indicators. Temperature values feature
+                        color-coding (e.g., warm hues for higher temperatures, cool tones for lower ranges) to enhance
+                        quick interpretation.
+
+                        <br><br> <br> <span style="font-weight: bold;">Technical implementation leverages:</span> <br>
+                        1. API Integration: Robust error handling for invalid city entries <br>
+                        2. Data Normalization: Consistent unit presentation across all metrics <br>
+                        3. Responsive Design: Optimized display for mobile and desktop views <br>
+                        4. Conditional Rendering: Context-appropriate weather icons and background themes <br>
+
+                        This implementation demonstrates my ability to transform raw API data into meaningful user
+                        experiences while maintaining technical accuracy and visual coherence.
+                    </p>
+                    <button class="togle" id="btn" onclick="togleText()">Read More</button>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="technology" id="technology">
+                <div class="text-container2">
+                    <h1>Technologies used</h1>
+                    <p style="font-weight: bold; font-size: 28px; color: rgb(12, 101, 244);"><span>Frontend</span>: HTML, CSS and JavaScript
+                        <br><span>API</span>: <a href="https://openweathermap.org/api">Open weather app</a>
+                    </p>
+                    <p class="colapsed2" id="paragraph2">
+                        This weather application was developed using the following technologies and services:
+
+                        <b>Frontend Development </b>
+                        - HTML5: Semantic markup for structured and accessible content. <br>
+                        - CSS3: Responsive styling with Flexbox/Grid for optimal viewing across devices. <br>
+                        - JavaScript (ES6+): Dynamic data handling, DOM manipulation, and asynchronous API calls. <br>
+
+                        <b>API Integration </b> <br>
+                        - OpenWeatherMap API: Fetches real-time weather data, including temperature, humidity, wind
+                        speed, and conditions.
+                        - Data Endpoints: Current weather data (/weather) with metric units (Celsius, km/h).
+                        - Error Handling: Graceful fallbacks for invalid city entries or API failures.
+
+                        <b>Development Approach </b> <br>
+                        - Mobile-First Design: Ensures usability on smartphones, tablets, and desktops. <br>
+                        - Asynchronous Programming: Uses fetch() with async/await for seamless API interactions. <br>
+                        - User-Centric Features: <br>
+                        - City-based search with auto-suggestions (optional enhancement). <br>
+                        - Dynamic icons for weather conditions (sunny, rainy, etc.). <br>
+                        - Unit consistency (Celsius, %, km/h).
+
+                    </p>
+                    <button class="togle2" id="btn2" onclick="togleText2()">Read More</button>
+
+                </div>
+            </div>
+       
+
+
+
+
+
+
+
+        <div class="setup" id="setup">
+            <h1>Setup Steps</h1>
+            <div class="get">
+                <span>1. Get API key</span>
+                <li>Sign up at <a href="https://openweathermap.org/api">Open weather app</a></li>
+                <li>Copy your API key</li>
+            </div>
+            <div class="structure">
+                <span>2. HTML Structure</span>
+                <div class="code">
+                    <img src="html.png" alt="">
+                </div>
+
+            </div>
+            <div class="jsstruct">
+                <span>3. JavaScript Structure</span>
+                <div class="code">
+                    <img src="js.png" alt="">
+                </div>
+            </div>
+        </div>
+   
+    </div>
+
+
+   
+</div>
+<div class="footer" id="footer">
+
+</div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    animation: 3s in ease ;
+    background: wite;
+}
+@keyframes in {
+    0%{
+       opacity: 0;
+     }
+    100%{
+        opacity: 1;
+       
+    }
+}
+.top{
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background: rgb(19, 19, 89);
+    margin-bottom: 40px;
+    z-index: 1000;
+
+}
+.top span{
+    font-size: 50px;
+}
+.top button{
+    background: transparent;
+    font-size: 25px;
+    color: white;
+}
+
+.doc{
+   
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    border-right: 2px solid;
+
+    align-items: center;
+
+}
+.doc h1{
+    color: rgb(9, 4, 118);
+    font-size: max(2vw, 25px);
+}
+.overview, .feature, .technology, .setup{
+    padding-top: 50px;
+   margin: 20px auto;
+    gap: 20px;
+}
+.overview h1, .feature h1, .technology h1, .setup h1{
+    padding: 40px;
+    text-align: center;
+}
+.text-container, .text-container1, .text-container2{
+    position: relative;
+    overflow: hidden;
+    max-width: 700px;
+   
+ 
+    padding: 20px;
+}
+
+.colapsed, .colapsed1, .colapsed2{
+    max-height: 220px;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+}
+.overview p, .feature p, .technology p{
+    
+   
+    font-size: 22px;
+    line-height: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+  
+    padding: 30px;
+}
+.left{
+    top: 80px;
+   left: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    padding: 10px;
+    gap: 30px;
+    position: fixed;
+    width: 13%;
+  
+    border: 1px solid;
+    
+}
+.left a{
+    text-decoration: none;
+    color: black;
+    font-size: max(1.2vw, 18px);
+}
+.left a:hover{
+    text-decoration: underline;
+}
+.togle, .togle1, .togle2{
+    background: none;
+    margin-left: 40%;
+    border: none;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background: cyan;
+    box-shadow: 3px 3px 100px rgb(18, 15, 15);
+   
+}
+.small{
+    font-size: 15px;
+    margin-left: 20px;
+}
+.right{
+    max-width: 500px;
+   background: rgb(148, 220, 207);
+    padding: 40px;
+    margin-top: 90px;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background: rgb(20, 20, 66);
+}
